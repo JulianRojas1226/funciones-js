@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="botones">
+            <h2>interaccion js</h2>
+            <p>Julian Esteban Rojas Cusba ficha:2828866</p>
+            <div class="boton">
+                <div class="fila">
+                    <button onclick="circulo()">Circulo</button>
+                    <button onclick="rombo()">Rombo</button>
+                    <button onclick="color()">fondo Color</button>
+                    <button onclick="img()">Fondo imagen</button>
+                </div>
+                <div class="fila">
+                    <button onclick="move_top()">top</button>
+                    <button onclick="move_left()">left</button>
+                    <button onclick="move_bottom()">bottom</button>
+                    <button onclick="move_right()">Right</button>
+                </div>
+                <div class="fila">
+                    <button onclick="move_diagonal()">diagonal</button>
+                    <button onclick="btnanimacion()">animation</button>
+                    <button onclick="btndegradado()">fondo degradado</button>
+                    <button onclick="btnEstrella()">estrellas</button>
+                </div>
+                <div class="fila">
+                    <button onclick="panelsuperior()">panel superior</button>
+                    <button onclick="panelLateral()">Panel Lateral</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="interaccion">
+            <h2>Cambio figura</h2>
+            <div id="figura">
+
+            </div>
+        </div>
+        <div id="panel-lateral" class="">
+            <div class="fila">
+                <h2>Menú</h2>
+                <button onclick="panelLateral()" class="cerrar">x</button>
+
+            </div>
+        </div>
+        <div id="panel-superior">
+            <div class="fila">
+                <h2>video</h2>
+                <button onclick="panelsuperior()">X</button>
+            </div>
+
+        </div>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>

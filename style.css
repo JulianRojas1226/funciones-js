@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #DCE4C9;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.botones{
+    margin-bottom: 100px;
+    text-align: center;
+    width: 50%;
+    margin: 20px;
+    border: 2px solid #E07B39;
+    height: 700px;   
+}
+.interaccion{
+    width: 50%;
+    border: 2px solid #E07B39;
+    height: 700px;
+    position: relative;
+}
+#figura{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background-color: #E07B39;
+    top: 250px;
+    right: 230px;
+}
+.interaccion h2{
+    text-align: center;
+}
+.boton{
+    margin-top: 50px;
+}
+.fila{
+    width: 100%;
+    margin-bottom: 20px;
+}
+button{
+    margin: 20px 20px;
+    padding: 20px 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border:2px solid #E07B39;
+    border-radius: 30px;
+    transition: .4s;
+    color: #E07B39;
+}
+button:hover{
+    background: #E07B39;
+    color: #DCE4C9;
+}
+#figura.circulo{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background-color: #E07B39;
+    top: 230px;
+    right: 230px;
+    border-radius: 50%;
+}
+#figura.rombo{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background-color: #E07B39;
+    top: 250px;
+    right: 230px;
+    transform: rotate(45deg);
+}
+#figura.top{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background-color: #E07B39;
+    top: 30px;
+    right: 230px;    
+}
+#figura.left{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background-color: #E07B39;
+    top: 250px;
+    left: 30px;    
+}
+#figura.img{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background: url(img/imagen.jpg);
+    background-size:  cover;
+    top: 250px;
+    right: 230px;
+}
+#figura.bottom{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background-color: #E07B39;
+    top: 460px;
+    right: 230px;
+}
+#figura.right{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background-color: #E07B39;
+    top: 230px;
+    right: 30px;
+}
+#figura.deg{
+    top: 250px;
+    right: 230px;
+    background-image: linear-gradient(blue,red);
+}
+#figura.diagonal{
+    position: absolute;    
+    width: 200px;
+    height: 200px;
+    background-color: #E07B39;
+    top: 30px;
+    right: 30px;  
+}
+#figura.animacion {
+    width: 100px;
+    height: 100px;
+    background: grey;
+    animation:
+      move 3s infinite 0s,
+      rotate 3s infinite 3s;
+  }
+  
+  
+  @keyframes move {
+    to {
+      transform: translateX(500px);
+      background: red;
+    }
+  }
+  
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg) scale(0.5);
+      background: indigo;
+    }
+  }
+#panel-lateral  {
+    position: absolute;
+    left:-200px;
+    top: 0;
+    width: -600px;
+    height: 100%;
+    background: #E07B39;
+    z-index: 10;
+    transition: .4s;
+}
+#panel-lateral .fila{
+    display: flex;
+    background: #E07B39;
+    
+}
+#panel-lateral .fila  h2{
+    border: none;
+   background: #E07B39;
+   color: #DCE4C9;
+   padding: 10px;
+   width: 75%;
+   
+}
+#panel-lateral .fila .cerrar{
+   border: none;
+   background: transparent;
+   color: #DCE4C9;
+   background: #E07B39;
+   width: 25%;
+   padding: 10px;
+   margin: 0;
+   font-size: 20px;
+   transition: .4s;
+   
+}
+#panel-lateral .fila .cerrar:hover{
+    border: none;
+    background: transparent;
+    color: #E07B39;
+    background: #DCE4C9;
+    width: 25%;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    border-radius: 30px;
+    
+ }
+
+
+#panel-lateral.active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    background: #E07B39;
+    z-index: 10;
+}
+#panel-superior{
+    top: 1080px;
+    position: absolute;
+    width: 1520px;
+    height: -2160px;
+    background: #E07B39;
+    z-index: 10;
+    transition: .4s;
+}
+#panel-superior .fila{
+    display: flex;
+    background: #E07B39;
+}
+#panel-superior .fila h2{
+    border: none;
+    background: #E07B39;
+    color: #DCE4C9;
+    padding: 10px;
+    width: 75%;
+}
+#panel-superior .fila button{
+    border: none;
+    background: transparent;
+    color: #DCE4C9;
+    background: #E07B39;
+    width: 25%;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    transition: .4s;
+    
+}
+#panel-superior.active{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #E07B39;
+    z-index: 10;
+}
