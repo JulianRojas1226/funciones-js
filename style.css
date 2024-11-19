@@ -98,7 +98,7 @@ button:hover{
     position: absolute;    
     width: 200px;
     height: 200px;
-    background: url(img/imagen.jpg);
+    background: url(imagen.jpg);
     background-size:  cover;
     top: 250px;
     right: 230px;
